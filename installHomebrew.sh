@@ -17,7 +17,7 @@ chgrp admin /usr/local/bin
 
 # Downlading and installing Homebrew
 cd /usr/local
-git init -q
+git init -q # Needs error handling to check for xcode-select
 git config remote.origin.url https://github.com/Homebrew/brew
 git fetch origin master:refs/remotes/origin/master -n
 git reset --hard origin/master
